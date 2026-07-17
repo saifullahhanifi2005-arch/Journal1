@@ -1,0 +1,65 @@
+{
+  "name": "fools-hunting-room-desktop",
+  "version": "1.0.0",
+  "description": "Desktop Application & Installer for The Fools Hunting Room — Full-Stack Trading Journal & Analytics Platform",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --dev",
+    "build": "electron-builder",
+    "build:win": "electron-builder --win",
+    "build:mac": "electron-builder --mac",
+    "build:linux": "electron-builder --linux"
+  },
+  "keywords": [
+    "trading",
+    "forex",
+    "journal",
+    "electron",
+    "desktop",
+    "fools-hunting-room"
+  ],
+  "author": "Saifullah Hanifi <saifullahhanifi2005@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^34.2.0",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "com.foolshuntingroom.desktop",
+    "productName": "The Fools Hunting Room",
+    "copyright": "Copyright © 2026 Saifullah Hanifi",
+    "directories": {
+      "output": "dist-installers"
+    },
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "../frontend/public/images/app-icon.png"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "The Fools Hunting Room"
+    },
+    "mac": {
+      "target": [
+        "dmg"
+      ],
+      "icon": "../frontend/public/images/app-icon.png",
+      "category": "public.app-category.finance"
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ],
+      "icon": "../frontend/public/images/app-icon.png",
+      "category": "Finance"
+    }
+  }
+}
