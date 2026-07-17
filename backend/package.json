@@ -1,11 +1,11 @@
 {
-  "name": "bjournal-server",
+  "name": "fhr-cloud-backend",
   "version": "2.0.0",
-  "description": "Backend for BJournal & The Fools Hunting Room — Live News, Auto Email, Reports, MongoDB Atlas + Local Hybrid Engine",
+  "description": "Full-Stack Online Backend for The Fools Hunting Room — MongoDB Atlas / Local Hybrid Engine, Live News, Email & Auth",
   "type": "module",
   "scripts": {
-    "dev": "node --watch server.js",
-    "start": "node server.js"
+    "start": "node app.js",
+    "dev": "node --watch app.js"
   },
   "dependencies": {
     "cors": "^2.8.5",

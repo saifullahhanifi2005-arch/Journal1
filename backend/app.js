@@ -231,8 +231,7 @@ if (reportRecipients && cron.validate(reportSchedule)) {
 
 const distPaths = [
   path.join(__dirname, '../frontend/dist'),
-  path.join(__dirname, '../dist'),
-  path.join(__dirname, '../../frontend/dist')
+  path.join(__dirname, '../BJournal-main/dist')
 ];
 
 for (const distPath of distPaths) {
