@@ -19,7 +19,7 @@ let localServerProcess = null;
 
 // Configuration: Set this to your live Render/Cloud URL once deployed online!
 // Example: const DEFAULT_ONLINE_URL = 'https://the-fools-hunting-room.onrender.com';
-const DEFAULT_ONLINE_URL = process.env.ONLINE_URL || null;
+const DEFAULT_ONLINE_URL = https:the-fools-hunting-room.onrender.com;
 const LOCAL_SERVER_PORT = process.env.PORT || 3001;
 const LOCAL_URL = `http://localhost:${LOCAL_SERVER_PORT}`;
 
